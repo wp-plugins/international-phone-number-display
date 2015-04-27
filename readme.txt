@@ -1,10 +1,10 @@
 === Plugin Name ===
 Contributors: paulfp
-Donate link: http://example.com/
-Tags: comments, spam
+Donate link: https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=Q2Z9WJ7WKFS6W
+Tags: phone number, international phone number, telephone, telephone numbers, telecoms, telecoms cloud, api, ipinfo, ipinfoio, ip address, international dialing prefix
 Requires at least: 3.0.1
-Tested up to: 3.4
-Stable tag: 4.3
+Tested up to: 4.2
+Stable tag: 1.0.3
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -14,16 +14,17 @@ Easily and automatically display phone number in the correct international forma
 
 The plugin will automatically display telephone numbers in the correct format for international users from any country in the world. It does this by looking up their IP address (using ipinfo.io) and determining the country, then passing this information along with the phone number to the Telecoms Cloud API which formats the number correctly and adds the appropriate International Direct Dialing Number (IDD).
 
-Example: You may have a London phone number – 02079460981 – which would be displayed like so for visitors from the following countries:
+**Example:** You may have a London phone number - 02079460981 - which would be displayed like so for visitors from the following countries:
 
-UK: 020 7946 0981 (no prefix added – just spaces added to make number readable)
-US: 011 44 20 7946 0981
-Spain: 00 44 20 7946 0981
-Usage: wherever you want a telephone number to be formatted automatically within your website, use the shortcode like so:
+* UK: 020 7946 0981 (no prefix added - just spaces added to make number readable)
+* US: 011 44 20 7946 0981
+* Spain: 00 44 20 7946 0981
+
+**Usage:** wherever you want a telephone number to be formatted automatically within your website, use the shortcode like so:
 
 [intPnd servicenumber="02079460981" location="GB"]
 
-Note: you must pass the 2-digit country code in which the telephone number is located. For a list, see http://en.wikipedia.org/wiki/ISO_3166-1_alpha-2
+**Note:** you must pass the 2-digit country code in which the telephone number is located. For a list, see http://en.wikipedia.org/wiki/ISO_3166-1_alpha-2
 
 == Installation ==
 
@@ -48,6 +49,15 @@ You don't for ipinfo.io but you'll need to go to www.telecomscloud.com and get s
 The plugin will just output your number unchanged.
 
 == Changelog ==
+
+= 1.0.3 =
+* Trim SID and Token input on admin options page.
+
+= 1.0.2 =
+* Minor readme fixes.
+
+= 1.0.1 =
+* Minor readme fixes.
 
 = 1.0 =
 * Initial stable release.
