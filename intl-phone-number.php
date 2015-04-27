@@ -4,7 +4,7 @@
     Plugin URI: http://www.paulfp.net/wordpress-plugins/international-phone-number-display/
     Description: Automatically display telephone numbers in either standard national format or full international format (including dialling prefix) depending on where your web page is being viewed from.
     Author: Paul Freeman-Powell
-    Version: 1.0.2
+    Version: 1.0.3
     Author URI: https://twitter.com/paulfp
     */
 
@@ -78,10 +78,10 @@ function intPnd_admin() {
 	<?php
 	if($_POST['intPnd_hidden'] == 'Y') {
         //Form data sent
-        $intPnd_sid = $_POST['intPnd_sid'];
+        $intPnd_sid = trim($_POST['intPnd_sid']);
 		update_option('intPnd_sid', $intPnd_sid);
          
-        $intPnd_token = $_POST['intPnd_token'];
+        $intPnd_token = trim($_POST['intPnd_token']);
 		update_option('intPnd_token', $intPnd_token);  
         ?>
         <div class="updated"><p><strong>Options saved.</strong></p></div>

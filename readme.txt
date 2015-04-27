@@ -4,7 +4,7 @@ Donate link: https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_i
 Tags: phone number, international phone number, telephone, telephone numbers, telecoms, telecoms cloud, api, ipinfo, ipinfoio, ip address, international dialing prefix
 Requires at least: 3.0.1
 Tested up to: 4.2
-Stable tag: 1.0.2
+Stable tag: 1.0.3
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -49,6 +49,9 @@ You don't for ipinfo.io but you'll need to go to www.telecomscloud.com and get s
 The plugin will just output your number unchanged.
 
 == Changelog ==
+
+= 1.0.3 =
+* Trim SID and Token input on admin options page.
 
 = 1.0.2 =
 * Minor readme fixes.
