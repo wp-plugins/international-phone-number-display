@@ -4,7 +4,7 @@
     Plugin URI: http://www.paulfp.net/wordpress-plugins/international-phone-number-display/
     Description: Automatically display telephone numbers in either standard national format or full international format (including dialling prefix) depending on where your web page is being viewed from.
     Author: Paul Freeman-Powell
-    Version: 1.0
+    Version: 1.0.2
     Author URI: https://twitter.com/paulfp
     */
 
