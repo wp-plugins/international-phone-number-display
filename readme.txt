@@ -4,7 +4,7 @@ Donate link: https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_i
 Tags: phone number, international phone number, telephone, telephone numbers, telecoms, telecoms cloud, api, ipinfo, ipinfoio, ip address, international dialing prefix
 Requires at least: 3.0.1
 Tested up to: 4.2
-Stable tag: 1.0.3
+Stable tag: 2.0.0
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -13,6 +13,8 @@ Easily and automatically display phone number in the correct international forma
 == Description ==
 
 The plugin will automatically display telephone numbers in the correct format for international users from any country in the world. It does this by looking up their IP address (using ipinfo.io) and determining the country, then passing this information along with the phone number to the Telecoms Cloud API which formats the number correctly and adds the appropriate International Direct Dialing Number (IDD).
+
+As of version 2.0.0, the plugin also caches each new request (eg. number X in country Y being dialled from location Z) in order to return results from the cache in the case of subsequent identical requests. This results in less unnecessary requests being made to the Telecoms Cloud API, saving costs and increasing speed.
 
 **Example:** You may have a London phone number - 02079460981 - which would be displayed like so for visitors from the following countries:
 
@@ -50,6 +52,12 @@ The plugin will just output your number unchanged.
 
 == Changelog ==
 
+= 2.0.0 =
+* Major rewrite including OAuth2.0 Authentication to the Telecoms Cloud API.
+* Plugin seamlessly handles fetching, storing and expiration of your OAuth token for accessing the API.
+* Plugin now validates your API Credentials before storing them.
+* Plugin now caches requests and returns cached results when identical requests are made.
+
 = 1.0.3 =
 * Trim SID and Token input on admin options page.
 
@@ -63,7 +71,7 @@ The plugin will just output your number unchanged.
 * Initial stable release.
 
 == Upgrade Notice ==
-No upgrade exists.
+* Required upgrade enabling OAuth 2.0 authentication to the Telecoms Cloud API. You must upgrade in order for the plugin to function.
 
 == Screenshots ==
  No screenshot exists.
